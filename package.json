@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "node server",
+    "start": "server",
     "data:import": "node seeder",
     "data:destroy": "node seeder -d"
   },
