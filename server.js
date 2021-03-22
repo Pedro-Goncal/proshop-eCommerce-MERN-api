@@ -4,9 +4,6 @@ import morgan from "morgan";
 
 import { notFound, errorHandler } from "./middleware/errorMiddleware.js";
 
-//Terminal Colors Pakage for fun
-import colors from "colors";
-
 //MONGO DB
 import connectDB from "./config/db.js";
 
@@ -67,15 +64,9 @@ app.get("/api/config/paypal", (req, res) =>
   res.send(process.env.PAYPAL_CLIENT_ID)
 );
 
-//Upload images and making folder static
-const __dirname = path.resolve();
-app.use("/uploads", express.static(path.join(__dirname, "/uploads")));
-
 app.use(notFound);
 app.use(errorHandler);
 
-app.listen(
-  PORT,
-  () =>
-    console.log(`==>listening on http://localhost:${PORT}<==`.yellow.underline) //colors package
+app.listen(PORT, () =>
+  console.log(`==>listening on http://localhost:${PORT}<==`)
 );

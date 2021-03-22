@@ -7,9 +7,9 @@ const connectDB = () => {
       useUnifiedTopology: true,
       useNewUrlParser: true,
     })
-    .then(() => console.log(`==>ProShop mongoDB connected!<==`.green.underline))
+    .then(() => console.log(`==>ProShop mongoDB connected!<==`))
     .catch((err) => {
-      console.log(`Error: ${err}`.red.underline.bold);
+      console.log(`Error: ${err}`);
       process.exit(1);
     });
 };
