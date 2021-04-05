@@ -8,7 +8,7 @@
 
 ### Description
 
-Server for  [Proshop E-Comerce(Live Version)](https://proshop-ecommerce88.herokuapp.com/). 
+LCheck ou the live version  [HERE](https://proshop88.netlify.app/). 
 
 This server is built using Node and Express, and it also includes jsonWebToken for user validation and security, as well as bcrypt for password hashing to garantee user privacy and security. 
 
